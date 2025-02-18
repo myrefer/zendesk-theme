@@ -1735,10 +1735,11 @@ ul {
   border-bottom: 1px solid rgb(228, 228, 231);
   position: relative;
   color: $text_color;
+  text-decoration: none;
+}
 
-  :hover {
-    background-color: #f7f7f9;
-  }
+.article-list-item a:hover {
+  background-color: #f7f7f9;
 }
 
 .arrow a::before {
@@ -1760,8 +1761,8 @@ ul {
 
 /***** Section pages *****/
 .section-container {
-  display: flex;
-  justify-content: flex-end;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .section-content {
   flex: 1;
