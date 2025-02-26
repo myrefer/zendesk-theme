@@ -1317,12 +1317,29 @@ ul {
 }
 .hero-inner {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   max-width: 610px;
   margin: 0 auto;
 }
-
+.hero-title {
+  text-align: center;
+  color: $homepage_search_keyword_text_color;
+}
+.hero-title p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 4px;
+  padding-top: 88px;
+}
+@media (min-width: 768px) {
+  .hero-title p:first-child {
+    font-size: 28px;
+  }
+}
+.hero-title p:last-child {
+  margin: 0 0 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
 .page-header {
   display: flex;
   flex-direction: column;

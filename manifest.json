@@ -1,10 +1,29 @@
 {
   "name": "MySeries",
   "author": "Zendesk",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
+    {
+      "label": "検索BOX上部のテキスト",
+      "variables": [
+        {
+          "identifier": "homepage_search_keyword_text_color",
+          "type": "color",
+          "label": "テキストカラー",
+          "description": "検索BOX上部のテキストのテキストカラー",
+          "value": "#000"
+        },
+        {
+          "identifier": "homepage_search_keyword",
+          "type": "text",
+          "label": "キーワード",
+          "description": "検索させたいキーワード",
+          "value": ""
+        }
+      ]
+    },
     {
       "label": "colors_group_label",
       "variables": [

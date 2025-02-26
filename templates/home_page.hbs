@@ -1,8 +1,14 @@
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
 <section id="main-content" class="section hero">
+  <div class="hero-title">
+    <p>どんなことにお困りですか？</p>
+    <p>お調べになりたいキーワードを入力してください<br />
+      {{#if settings.homepage_search_keyword}}
+      例：{{settings.homepage_search_keyword}}など</p>
+    {{/if}}
+  </div>
   <div class="hero-inner">
-    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
       <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
       <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
@@ -13,7 +19,7 @@
 
 <div class="container">
   <section class="section knowledge-base">
-    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
+    <h2>機能で調べる</h2>
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}
