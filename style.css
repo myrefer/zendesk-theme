@@ -1322,7 +1322,7 @@ ul {
 }
 .hero-title {
   text-align: center;
-  color: $homepage_search_keyword_text_color;
+  color: $homepage_search_text_color;
 }
 .hero-title p:first-child {
   font-size: 24px;
