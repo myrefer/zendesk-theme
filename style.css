@@ -802,7 +802,7 @@ ul {
 }
 
 .logo img {
-  max-height: 37px;
+  max-height: 27px;
   vertical-align: middle;
 }
 
@@ -815,7 +815,8 @@ ul {
 }
 
 .logo a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .logo a:hover,
