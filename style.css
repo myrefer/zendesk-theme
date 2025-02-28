@@ -808,6 +808,10 @@ ul {
 
 .logo span {
   margin: 0 0 0 10px;
+  color: $text_color;
+}
+.logo span:visited {
+  color: $text_color;
 }
 
 .logo a {
