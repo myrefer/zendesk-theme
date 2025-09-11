@@ -1351,6 +1351,7 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px 0;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .page-header {
@@ -1359,6 +1360,7 @@ ul {
     flex-wrap: wrap;
     gap: 16px;
     margin: 0 0 32px;
+    align-items: center;
   }
 }
 .page-header .section-subscribe {
@@ -1781,6 +1783,10 @@ ul {
   max-width: 800px;
   margin: 0 auto;
 }
+.section-container .page-header h1 {
+  margin-bottom: 0;
+}
+
 .section-content {
   flex: 1;
   max-width: 100%;
