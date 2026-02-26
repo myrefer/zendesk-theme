@@ -86,10 +86,6 @@
             </div>
           </div>
         </div>
-
-        {{#if settings.show_follow_article}}
-          <div class="article-subscribe">{{subscribe}}</div>
-        {{/if}}
       </header>
 
       <section class="article-info">
@@ -134,9 +130,6 @@
 
       <footer>
         <div class="article-footer">
-          {{#if settings.show_article_sharing}}
-            <div class="article-share">{{share}}</div>
-          {{/if}}
           {{#if settings.show_article_comments}}
             {{#if comments}}
               <a href="#article-comments" class="article-comment-count">
@@ -150,19 +143,6 @@
             {{/if}}
           {{/if}}
         </div>
-        {{#with article}}
-          <div class="article-votes">
-            <h2 class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</h2>
-            <div class="article-votes-controls" role="group" aria-labelledby="article-votes-label">
-              {{vote 'up' class='button article-vote article-vote-up' selected_class="button-primary"}}
-              {{vote 'down' class='button article-vote article-vote-down' selected_class="button-primary"}}
-            </div>
-            <small class="article-votes-count">
-              {{vote 'label' class='article-vote-label'}}
-            </small>
-          </div>
-        {{/with}}
-
         <div class="article-return-to-top">
           <a href="#article-container">
             {{t 'return_to_top'}}
