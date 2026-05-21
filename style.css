@@ -1520,48 +1520,23 @@ ul {
 }
 
 /***** Promoted articles *****/
-.promoted-articles {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-@media (min-width: 1024px) {
-  .promoted-articles {
-    flex-direction: row;
-  }
-}
+/* .promoted-articles {
+  padding: 0;
+} */
 .promoted-articles-item {
-  flex: 1 0 auto;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
 }
-@media (min-width: 1024px) {
-  .promoted-articles-item {
-    align-self: flex-end;
-    flex: 0 0 auto;
-    padding-right: 30px;
-    width: 33%; /* Three columns on desktop */
-  }
-  [dir="rtl"] .promoted-articles-item {
-    padding: 0 0 0 30px;
-  }
-}
-.promoted-articles-item:nth-child(3n) {
-  padding-right: 0;
+.promoted-articles-item:last-child {
+  border-bottom: 0;
 }
 .promoted-articles-item a {
   display: block;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 600;
 }
 .promoted-articles-item .icon-lock {
   vertical-align: baseline;
-}
-.promoted-articles-item:last-child a {
-  border: 0;
-}
-@media (min-width: 1024px) {
-  .promoted-articles-item:last-child a {
-    border-bottom: 1px solid #ddd;
-  }
 }
 
 /***** Community section in homepage *****/
@@ -1689,19 +1664,8 @@ ul {
   width: 1px;
   white-space: nowrap;
 }
-.recent-activity-comment-icon svg {
-  vertical-align: middle;
-  color: $brand_color;
-  width: 16px;
-  height: 16px;
-}
-.recent-activity-comment-icon:after {
-  content: attr(data-comment-count);
-  margin-left: 3px;
-}
-[dir="rtl"] .recent-activity-comment-icon:after {
-  margin-left: 0;
-  margin-right: 3px;
+.recent-activity-comment-icon {
+  display: none;
 }
 
 /***** Category pages *****/
